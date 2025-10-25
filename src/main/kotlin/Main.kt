@@ -11,8 +11,25 @@ fun main() {
     510   911   144   554
     выведется результат: В массиве использовано 5 различных цифр
      */
+    print("Введите желаемую вами размерность двумерного массива: ")
+    val arrSize = readln()
 
-    val arrOneDimens: Array<Int> = Array(10) { (0..255).random() }
-    arrOneDimens.forEach { print(it.toString() + "\t") }
-    println()
+    arrSize.split(" ")
+
+    val col: Int = arrSize[0].digitToInt()
+    val row: Int = arrSize[1].digitToInt()
+
+    println("Двумерный массив:")
+    val arrTwoDimens: Array<Array<Int>> = Array(col) {                // Генерация двумерного массива
+        Array(row) {
+            (100..999).random()
+        }
+    }
+    for (i in 0..col) {
+        for (j in 0..row) {
+            print(arrTwoDimens[i][j].toString() + "\t\t")
+        }
+        println()
+    }
+
 }
