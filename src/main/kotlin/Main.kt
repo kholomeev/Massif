@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     /*
     Создать программу, выполняющую следующий функционал:
     - запрашивается количество строк и столбцов для двумерного массива
@@ -11,4 +11,8 @@ fun main(args: Array<String>) {
     510   911   144   554
     выведется результат: В массиве использовано 5 различных цифр
      */
+
+    val arrOneDimens: Array<Int> = Array(10) { (0..255).random() }
+    arrOneDimens.forEach { print(it.toString() + "\t") }
+    println()
 }
