@@ -23,9 +23,12 @@ fun main() {
     println("Двумерный массив:")
     val arrTwoDimens: Array<Array<Int>> = Array(col) {
         Array(row) {
-            (100..999).random()
+            (100..999).random() // Ввод элементов
         }
     }
+    // Количество различных цифр в матрице
+
+    // Вывод на консоль
     for (i in 0 until col) {
         for (j in 0 until row) {
             print(arrTwoDimens[i][j].toString() + "\t\t")
