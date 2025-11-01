@@ -28,6 +28,7 @@ fun main() {
     val col = arrSizeCl[1].toInt()
 
     // Генерация двумерного массива
+    println("Введите $row строк(у/и) с $col элементами: ")
     val matrix = Array(row) { IntArray(col) }
     for (i in 0 until row) {
         val rowInput = readln().split(" ").map { it.toInt() }
@@ -44,13 +45,12 @@ fun main() {
     }
 
     // Количество различных цифр в матрице
-    val diffDigits = mutableSetOf<String>()
+    val diffDigits = mutableSetOf<Char>()
     for (row in matrix) {
         for (element in row) {
-            val digits = arrSize.split("")
-            for (dig in digits) {
-                diffDigits.add(dig)
-            }
+            element.toString()
+                .filter { it.isDigit() }
+                .forEach { diffDigits.add(it) }
         }
     }
 
@@ -58,8 +58,8 @@ fun main() {
 
     // Вывод на консоль
     println("Двумерный массив:")
-    for (i in 0 until col) {
-        for (j in 0 until row) {
+    for (i in 0 until row) {
+        for (j in 0 until col) {
             print(matrix[i][j].toString() + "\t\t")
         }
         println()
