@@ -48,6 +48,9 @@ fun main() {
     for (row in matrix) {
         for (element in row) {
             val digits = arrSize.split("")
+            for (dig in digits) {
+                diffDigits.add(dig)
+            }
         }
     }
 
