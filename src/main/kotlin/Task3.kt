@@ -6,8 +6,6 @@ fun main() {
     //  Первый массив считать закольцованным. Регистр букв не имеет значения.
     //  Имеется массив из символов русского алфавита (все 33 символа, могут быть не по порядку).
     val cyrillic = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
-    println(cyrillic)
+    val cyrillicChars = cyrillic.toList()
 
-    cyrillic.toCharArray()
-    println(cyrillic)
 }
