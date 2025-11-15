@@ -25,14 +25,25 @@ fun main() {
         }
     }
     // Определение симметричности
+    var symmetricCounter: Int = 0
     for (i in 0 until 5) {
         for (j in 0 until 5) {
-            if (matrix[i, j] == matrix[j, i]) {
+            if (matrix[i][j] == matrix[j][i]) {
                 if (i == j) continue
-
+                symmetricCounter++
             }
-
         }
     }
     // Выводы
+    println("Двумерный массив:")
+    for (i in 0 until 5) {
+        for (j in 0 until 5) {
+            print(matrix[i][j].toString() + "\t")
+        }
+        println()
+    }
+
+    if (symmetricCounter == 20) {
+        println("Массив симметричен относительно главной диагонали")
+    }
 }

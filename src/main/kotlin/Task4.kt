@@ -7,7 +7,14 @@ fun main() {
     // Значит в итоговом массиве число два должно быть два раза
 
     // Ввод массивов
+    var arr1: IntArray = readln().split(" ").map { it.toInt() }.toIntArray()
+    var arr2: IntArray = readln().split(" ").map { it.toInt() }.toIntArray()
     // Образование пересечения массивов
+    arr1.sort() // 0 1 2 2 3
+    arr2.sort() // 1 2 2 2 3 5 7
     // Формирование третьего массива
+    var arr1_map: Map<Set<Int>, Int> 
+    var arr2_map: Map<Set<Int>, Int>
     // Вывод массива
+
 }
