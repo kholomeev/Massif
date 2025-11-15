@@ -63,5 +63,5 @@ fun main() {
         println()
     }
 
-    println(diffDigits)
+    println("В массиве использовано $diffDigits различных цифр")
 }

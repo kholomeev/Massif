@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Задание 1">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" afterDir="false" />
+    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Задание 1 и 3">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +45,25 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="34Ybtl4BMU6zGAm8JMUw9Vc7Mpt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Kotlin.Task1Kt.executor": "Run",
-    "Kotlin.Task3Kt.executor": "Run",
-    "Kotlin.Task4Kt.executor": "Run",
-    "Kotlin.Task5Kt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Kotlin.Task1Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Task3Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Task4Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Task5Kt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
