@@ -54,8 +54,6 @@ fun main() {
         }
     }
 
-    println(diffDigits)
-
     // Вывод на консоль
     println("Двумерный массив:")
     for (i in 0 until row) {
@@ -65,4 +63,5 @@ fun main() {
         println()
     }
 
+    println(diffDigits)
 }
