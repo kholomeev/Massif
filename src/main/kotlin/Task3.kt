@@ -37,14 +37,14 @@ fun encryptDecrypt(
     for (ch in text) {
         val chNum = numByLetter[ch]
         if (chNum == null) {
-            result.append(ch) // если не русская буква
+            result.append(ch)
             continue
         }
 
         val shift = numByLetter[key[keyIndex % keyLen]] ?: 0
         val newNum = when (mode) {
             "шифровать" -> ((chNum + shift - 1) % 33) + 1
-            "дешифровать" -> ((chNum - shift - 1 + 33 * 10) % 33) + 1 // +33*10 для избежания отрицательных
+            "дешифровать" -> ((chNum - shift - 1 + 33 * 10) % 33) + 1
             else -> chNum
         }
 
