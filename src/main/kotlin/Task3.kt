@@ -1,13 +1,9 @@
 fun main() {
-    val alphabet = listOf(
-        'А','Б','В','Г','Д','Е','Ё','Ж','З','И','Й','К','Л','М','Н','О','П','Р','С','Т','У', 'Ф','Х','Ц','Ч','Ш','Щ','Ь','Ы','Ъ','Э','Ю','Я'
-    )
-    val numbers = listOf(
-        21,13,4,20,22,1,25,12,24,14,2,28,9,23,3,29,6,16,15,11,26,5,30,27,8,18,10,33,31,32,19,7,17
-    )
-
-    val numByLetter = alphabet.zip(numbers).toMap()
-    val letterByNum = numbers.zip(alphabet).toMap()
+    val numByLetter: Map<Char, Int> = mapOf('А' to 21, 'Б' to 13, 'В' to 4, 'Г' to 20, 'Д' to 22, 'Е' to 1, 'Ё' to 25,
+        'Ж' to 12, 'З' to 24, 'И' to 14, 'Й' to 2, 'К' to 28, 'Л' to 9, 'М' to 23, 'Н' to 3, 'О' to 29, 'П' to 6,
+        'Р' to 16, 'С' to 15, 'Т' to 11, 'У' to 26, 'Ф' to 5, 'Х' to 30, 'Ц' to 27, 'Ч' to 8, 'Ш' to 18, 'Щ' to 10,
+        'Ь' to 33, 'Ы' to 31, 'Ъ' to 32, 'Э' to 19, 'Ю' to 7, 'Я' to 17)
+    val letterByNum: Map<Int, Char> = numByLetter.entries.associateBy({it.value}) {it.key}
 
     print("Введите режим (шифровать / дешифровать): ")
     val mode = readLine()?.trim()?.lowercase() ?: "шифровать"

@@ -33,9 +33,7 @@ fun main() {
     val diffDigits = mutableSetOf<Char>()
     for (row in matrix) {
         for (element in row) {
-            element.toString()
-                .filter { it.isDigit() }
-                .forEach { diffDigits.add(it) }
+            element.toString().filter { it.isDigit() }.forEach { diffDigits.add(it) }
         }
     }
 
