@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Задания 1, 2, 3, (4), 5">
+    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Задания">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" afterDir="false" />
     </list>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1763812723002</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Задания">
+      <created>1763814210519</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1763814210519</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +205,8 @@
     <MESSAGE value="Шаблон" />
     <MESSAGE value="Задание 1" />
     <MESSAGE value="Задания 1, 2, 3, (4), 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задания 1, 2, 3, (4), 5" />
+    <MESSAGE value="Задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задания" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

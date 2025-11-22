@@ -7,6 +7,7 @@ fun main() {
     // Значит в итоговом массиве число два должно быть два раза
 
     // Ввод массивов
+    println("Введите два числовых массива:")
     var arr1: IntArray = readln().split(" ").map { it.toInt() }.toIntArray()
     var arr2: IntArray = readln().split(" ").map { it.toInt() }.toIntArray()
     // Образование пересечения массивов
@@ -24,6 +25,6 @@ fun main() {
         arr2Map[num] = count + 1
     }
     // Вывод массива
-    print(arr1Map)
-
+    print(arr1Map) // {0=1, 1=1, 2=2, 3=1}
+    print(arr2Map) // {     1=1, 2=3, 3=1, 5=1, 7=1}
 }
