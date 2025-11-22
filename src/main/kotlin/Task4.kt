@@ -13,8 +13,17 @@ fun main() {
     arr1.sort() // 0 1 2 2 3
     arr2.sort() // 1 2 2 2 3 5 7
     // Формирование третьего массива
-    var arr1_map: Map<Set<Int>, Int> 
-    var arr2_map: Map<Set<Int>, Int>
+    var arr1Map: MutableMap<Int, Int> = mutableMapOf()
+    for (num in arr1) {
+        val count = arr1Map.getOrDefault(num, 0)
+        arr1Map[num] = count + 1
+    }
+    var arr2Map: MutableMap<Int, Int> = mutableMapOf()
+    for (num in arr2) {
+        val count = arr2Map.getOrDefault(num, 0)
+        arr2Map[num] = count + 1
+    }
     // Вывод массива
+    print(arr1Map)
 
 }
