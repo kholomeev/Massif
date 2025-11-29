@@ -24,7 +24,11 @@ fun main() {
         val count = arr2Map.getOrDefault(num, 0)
         arr2Map[num] = count + 1
     }
+    //
+    var arr3 = arr1Map.keys intersect arr2Map.keys
+    print(arr3)
+    var arr4 = arr1Map.entries intersect arr2Map.entries
+    print(arr4)
     // Вывод массива
-    print(arr1Map) // {0=1, 1=1, 2=2, 3=1}
-    print(arr2Map) // {     1=1, 2=3, 3=1, 5=1, 7=1}
+
 }
