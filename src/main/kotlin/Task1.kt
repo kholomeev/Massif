@@ -26,9 +26,9 @@ fun main() {
     }
 
     while (true) {
-        println("Введите $row строк(и) с $col элементами: ")
         matrix = Array(row) { IntArray(col) }
         for (i in 0 until row) {
+            print("${i+1} строка: ")
             val rowInputMatrix = readln().split(" ").map { it.toInt() }
 
             if (rowInputMatrix.size == col) {
