@@ -1,7 +1,10 @@
 fun main() {
+    println("Введите элементы в матрицу: ")
+    println("Ввод осуществляется построчный.\n")
     val matrix: Array<IntArray> = Array(5) {IntArray(5)}
     for (i in 0 until 5) {
-        val rowInput = readln().split(" ").map { it.toInt() }
+        print("${i+1} строка: ")
+        val rowInput = readln().trim().split(" ").map { it.toInt() }
 
         if (rowInput.size == 5) {
             for (j in 0 until 5) {

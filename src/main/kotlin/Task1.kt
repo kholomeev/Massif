@@ -1,33 +1,47 @@
 fun main() {
-    print("Введите желаемую вами размерность двумерного массива: ")
-    val arrSize = readln().trim()
-    if (arrSize.isEmpty()) {
-        println("Размерность не указана.")
-        return
+    val row: Int
+    val col: Int
+    val matrix: Array<IntArray>
+
+    while (true) {
+        print("Введите количество строк в матрице: ")
+        val rowInput = readln().trim()
+        if (rowInput.isEmpty()) {
+            println("Количество строк не указано.")
+            continue
+        }
+        row = rowInput.toInt()
+        break
     }
 
-    val arrSizeCl = arrSize.split(" ")
-    if (arrSizeCl.size != 2) {
-        println("Не все параметры размерности были указаны, или их больше, чем два.")
-        return
+    while (true) {
+        print("Введите количество столбцов в матрице: ")
+        val colInput = readln().trim()
+        if (colInput.isEmpty()) {
+            println("Количество столбцов не указано.")
+            continue
+        }
+        col = colInput.toInt()
+        break
     }
-    val row = arrSizeCl[0].toInt()
-    val col = arrSizeCl[1].toInt()
 
-    println("Введите $row строк(и) с $col элементами: ")
-    val matrix = Array(row) { IntArray(col) }
-    for (i in 0 until row) {
-        val rowInput = readln().split(" ").map { it.toInt() }
+    while (true) {
+        println("Введите $row строк(и) с $col элементами: ")
+        matrix = Array(row) { IntArray(col) }
+        for (i in 0 until row) {
+            val rowInputMatrix = readln().split(" ").map { it.toInt() }
 
-        if (rowInput.size == col) {
-            for (j in 0 until col) {
-                matrix[i][j] = rowInput[j]
+            if (rowInputMatrix.size == col) {
+                for (j in 0 until col) {
+                    matrix[i][j] = rowInputMatrix[j]
+                }
+            }
+            else {
+                println("Ошибка: количество элементов в строке не совпадает с количеством столбцов ($col). Попробуйте снова.")
+                continue
             }
         }
-        else {
-            println("Ошибка: количество элементов в строке не совпадает с количеством столбцов ($col). Попробуйте снова.")
-            return
-        }
+        break
     }
 
     val diffDigits = mutableSetOf<Char>()
@@ -45,5 +59,5 @@ fun main() {
         println()
     }
 
-    println("В массиве использовано $diffDigits различных цифр")
+    println("В массиве использовано ${diffDigits.size} различных цифр")
 }

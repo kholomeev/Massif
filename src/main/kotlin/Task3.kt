@@ -5,7 +5,7 @@ fun main() {
         'Ь' to 33, 'Ы' to 31, 'Ъ' to 32, 'Э' to 19, 'Ю' to 7, 'Я' to 17)
     val letterByNum: Map<Int, Char> = numByLetter.entries.associateBy({it.value}) {it.key}
 
-    print("Введите режим (шифровать / дешифровать): ")
+    print("Введите режим (1 - шифровать / 2 - дешифровать): ")
     val mode = readLine()?.trim()?.lowercase() ?: "шифровать"
 
     print("Введите текст: ")
