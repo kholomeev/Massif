@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Выполнено...?">
+    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Отладка 1 и 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764420485388</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Отладка 1 и 2">
+      <option name="closed" value="true" />
+      <created>1764790737942</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1764790737942</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +236,8 @@
     <MESSAGE value="Задания" />
     <MESSAGE value="Выполнено" />
     <MESSAGE value="Выполнено...?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнено...?" />
+    <MESSAGE value="Отладка 1 и 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отладка 1 и 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
