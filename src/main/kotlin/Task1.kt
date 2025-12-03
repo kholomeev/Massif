@@ -1,54 +1,58 @@
 fun main() {
-    val row: Int
-    val col: Int
-    val matrix: Array<IntArray>
+    var row: Int
+    var col: Int
+    var matrix: Array<IntArray>
 
     while (true) {
         print("Введите количество строк в матрице: ")
-        val rowInput = readln().trim()
-        if (rowInput.isEmpty()) {
-            println("Количество строк не указано.")
-            continue
+        try {
+            val rowInput = readln().trim()
+            row = rowInput.toInt()
+            break
         }
-        row = rowInput.toInt()
-        break
+        catch (e: NumberFormatException) {
+            println("Пустой ввод или было введено не число.")
+        }
     }
 
     while (true) {
         print("Введите количество столбцов в матрице: ")
-        val colInput = readln().trim()
-        if (colInput.isEmpty()) {
-            println("Количество столбцов не указано.")
-            continue
+        try {
+            val colInput = readln().trim()
+            col = colInput.toInt()
+            break
         }
-        col = colInput.toInt()
-        break
+        catch (e: NumberFormatException) {
+            println("Пустой ввод или было введено не число.")
+        }
     }
 
     while (true) {
-        matrix = Array(row) { IntArray(col) }
-        for (i in 0 until row) {
-            print("${i+1} строка: ")
-            val rowInputMatrix = readln().split(" ").map { it.toInt() }
+        try {
+            matrix = Array(row) { IntArray(col) }
+            for (i in 0 until row) {
+                print("${i+1} строка: ")
+                val rowInputMatrix = readln().split(" ").map { it.toInt() }
 
-            if (rowInputMatrix.size == col) {
-                for (j in 0 until col) {
-                    matrix[i][j] = rowInputMatrix[j]
+                if (rowInputMatrix.size >= col) {
+                    for (j in 0 until col) {
+                        matrix[i][j] = rowInputMatrix[j]
+                    }
+                }
+                else {
+                    println("Количество элементов в строке больше количества столбцов ($col). Программа завершена.")
+                    return
                 }
             }
-            else {
-                println("Ошибка: количество элементов в строке не совпадает с количеством столбцов ($col). Попробуйте снова.")
-                continue
-            }
+            break
         }
-        break
-    }
+        catch (e: NumberFormatException) {
+            println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
+        }
+        catch (e: IndexOutOfBoundsException) {
+            println("Количество элементов в строке меньше количества столбцов ($col). Попробуйте снова.")
+        }
 
-    val diffDigits = mutableSetOf<Char>()
-    for (row in matrix) {
-        for (element in row) {
-            element.toString().filter { it.isDigit() }.forEach { diffDigits.add(it) }
-        }
     }
 
     println("Двумерный массив:")
@@ -59,5 +63,16 @@ fun main() {
         println()
     }
 
-    println("В массиве использовано ${diffDigits.size} различных цифр")
+    println("В массиве использовано ${diffDigits(matrix)} различных цифр")
+}
+
+fun diffDigits(matrix: Array<IntArray>): Int {
+    val diffDigits = mutableSetOf<Char>()
+    for (row in matrix) {
+        for (element in row) {
+            element.toString().filter { it.isDigit() }.forEach { diffDigits.add(it) }
+        }
+    }
+
+    return diffDigits.size
 }

@@ -1,29 +1,31 @@
 fun main() {
-    println("Введите элементы в матрицу: ")
-    println("Ввод осуществляется построчный.\n")
-    val matrix: Array<IntArray> = Array(5) {IntArray(5)}
-    for (i in 0 until 5) {
-        print("${i+1} строка: ")
-        val rowInput = readln().trim().split(" ").map { it.toInt() }
+    var matrix: Array<IntArray>
+    while (true) {
+        try {
+            println("Введите элементы в матрицу: ")
+            println("Ввод осуществляется построчный.\n")
+            matrix = Array(5) { IntArray(5) }
+            for (i in 0 until 5) {
+                print("${i+1} строка: ")
+                val rowInput = readln().trim().split(" ").map { it.toInt() }
 
-        if (rowInput.size == 5) {
-            for (j in 0 until 5) {
-                matrix[i][j] = rowInput[j]
+                if (rowInput.size >= 5) {
+                    for (j in 0 until 5) {
+                        matrix[i][j] = rowInput[j]
+                    }
+                }
+                else {
+                    println("Количество элементов в строке больше количества столбцов (5). Программа завершена.")
+                    return
+                }
             }
+            break
         }
-        else {
-            println("Ошибка: количество элементов в строке не совпадает с количеством столбцов (5). Попробуйте снова.")
-            return
+        catch (e: NumberFormatException) {
+            println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
         }
-    }
-
-    var symmetricCounter: Int = 0
-    for (i in 0 until 5) {
-        for (j in 0 until 5) {
-            if (matrix[i][j] == matrix[j][i]) {
-                if (i == j) continue
-                symmetricCounter++
-            }
+        catch (e: IndexOutOfBoundsException) {
+            println("Количество элементов в строке меньше количества столбцов (5). Попробуйте снова.")
         }
     }
 
@@ -35,7 +37,24 @@ fun main() {
         println()
     }
 
-    if (symmetricCounter == 20) {
-        println("Массив симметричен относительно главной диагонали")
+    println(isMatrixSymmetric(matrix))
+}
+
+fun isMatrixSymmetric(matrix: Array<IntArray>): String {
+    var symmetricCounter: Int = 0
+    for (i in 0 until 5) {
+        for (j in 0 until 5) {
+            if (matrix[i][j] == matrix[j][i]) {
+                if (i == j) continue
+                symmetricCounter++
+            }
+        }
+    }
+
+    return if (symmetricCounter == 20) {
+        "Массив симметричен относительно главной диагонали"
+    }
+    else {
+        "Массив не симметричен относительно главной диагонали";
     }
 }
