@@ -5,17 +5,41 @@ fun main() {
         'Ь' to 33, 'Ы' to 31, 'Ъ' to 32, 'Э' to 19, 'Ю' to 7, 'Я' to 17)
     val letterByNum: Map<Int, Char> = numByLetter.entries.associateBy({it.value}) {it.key}
 
-    print("Введите режим (1 - шифровать / 2 - дешифровать): ")
-    val mode = readLine()?.trim()?.lowercase() ?: "шифровать"
+    var mode: String
+    var text: String
+    var key: String
 
-    print("Введите текст: ")
-    val text = readLine()?.trim()?.uppercase() ?: ""
+    while (true) {
+        print("Введите режим (1 - шифровать / 2 - дешифровать): ")
+        mode = readln().trim()
+        if (mode != "1" && mode != "2") {
+            println("Ошибка")
+            continue
+        }
+        break
+    }
 
-    print("Введите ключевое слово: ")
-    val key = readLine()?.trim()?.uppercase() ?: ""
+    while (true) {
+        print("Введите текст: ")
+        text = readln().trim().uppercase()
+        if (text.isEmpty()) {
+            println("Ошибка")
+            continue
+        }
+        break
+    }
+
+    while (true) {
+        print("Введите ключевое слово: ")
+        key = readln().trim().uppercase()
+        if (key.isEmpty()) {
+            println("Ошибка")
+            continue
+        }
+        break
+    }
 
     val result = encryptDecrypt(text, key, numByLetter, letterByNum, mode)
-
     println("Результат: $result")
 }
 
@@ -39,8 +63,8 @@ fun encryptDecrypt(
 
         val shift = numByLetter[key[keyIndex % keyLen]] ?: 0
         val newNum = when (mode) {
-            "шифровать" -> ((chNum + shift - 1) % 33) + 1
-            "дешифровать" -> ((chNum - shift - 1 + 33 * 10) % 33) + 1
+            "1" -> ((chNum + shift - 1) % 33) + 1
+            "2" -> ((chNum - shift - 1 + 33 * 10) % 33) + 1
             else -> chNum
         }
 

@@ -1,9 +1,22 @@
-fun main() {
-    print("Введите несколько слов на английском: ")
-    var words: List<String> = readln().split(" ")
-    words = words.sorted()
+import org.w3c.dom.UserDataHandler
 
-    val groups = groupByUniqueLetters(words)
+fun main() {
+    var words: List<String>
+    var wordsOnly: List<String>
+
+    while (true) {
+        println("Сортировка слов по похожим буквам. Символы, не являющиеся буквами, будут удалены.")
+        print("Введите несколько слов: ")
+
+        words = readln().split(" ")
+
+        wordsOnly = words.map { it.filter { ch -> ch.isLetter() }}
+        wordsOnly.sorted()
+
+        break
+    }
+
+    val groups = groupByUniqueLetters(wordsOnly)
     groups.forEach { (key, value) ->
         println("$value")
     }
