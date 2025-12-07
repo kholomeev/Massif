@@ -6,8 +6,8 @@ fun task3() {
     val letterByNum: Map<Int, Char> = numByLetter.entries.associateBy({it.value}) {it.key}
 
     var mode: String
-    var text: String
-    var key: String
+    var textL: String
+    var keyL: String
 
     while (true) {
         print("Введите режим (1 - шифровать / 2 - дешифровать): ")
@@ -21,8 +21,10 @@ fun task3() {
 
     while (true) {
         print("Введите текст: ")
-        text = readln().trim().uppercase()
-        if (text.isEmpty()) {
+        val text = readln().trim().uppercase()
+
+        textL = text.filter { it.isLetter() }
+        if (textL.isEmpty()) {
             println("Ошибка")
             continue
         }
@@ -31,15 +33,17 @@ fun task3() {
 
     while (true) {
         print("Введите ключевое слово: ")
-        key = readln().trim().uppercase()
-        if (key.isEmpty()) {
+        val key = readln().trim().uppercase()
+
+        keyL = key.filter { it.isLetter() }
+        if (keyL.isEmpty()) {
             println("Ошибка")
             continue
         }
         break
     }
 
-    val result = encryptDecrypt(text, key, numByLetter, letterByNum, mode)
+    val result = encryptDecrypt(textL, keyL, numByLetter, letterByNum, mode)
     println("Результат: $result")
 }
 

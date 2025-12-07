@@ -32,16 +32,10 @@ fun task1() {
             matrix = Array(row) { IntArray(col) }
             for (i in 0 until row) {
                 print("${i+1} строка: ")
-                val rowInputMatrix = readln().split(" ").map { it.toInt() }
+                val rowInputMatrix = readln().trim().split(" ").map { it.toInt() }
 
-                if (rowInputMatrix.size >= col) {
-                    for (j in 0 until col) {
-                        matrix[i][j] = rowInputMatrix[j]
-                    }
-                }
-                else {
-                    println("Количество элементов в строке больше количества столбцов ($col). Программа завершена.")
-                    return
+                for (j in 0 until rowInputMatrix.size) {
+                    matrix[i][j] = rowInputMatrix[j]
                 }
             }
             break
@@ -50,9 +44,8 @@ fun task1() {
             println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
         }
         catch (e: IndexOutOfBoundsException) {
-            println("Количество элементов в строке меньше количества столбцов ($col). Попробуйте снова.")
+            println("Количество элементов в строке меньше/больше количества столбцов ($col). Попробуйте снова.")
         }
-
     }
 
     println("Двумерный массив:")

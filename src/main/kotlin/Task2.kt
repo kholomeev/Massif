@@ -9,14 +9,8 @@ fun task2() {
                 print("${i+1} строка: ")
                 val rowInput = readln().trim().split(" ").map { it.toInt() }
 
-                if (rowInput.size >= 5) {
-                    for (j in 0 until 5) {
-                        matrix[i][j] = rowInput[j]
-                    }
-                }
-                else {
-                    println("Количество элементов в строке больше количества столбцов (5). Программа завершена.")
-                    return
+                for (j in 0 until rowInput.size) {
+                    matrix[i][j] = rowInput[j]
                 }
             }
             break
@@ -25,7 +19,7 @@ fun task2() {
             println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
         }
         catch (e: IndexOutOfBoundsException) {
-            println("Количество элементов в строке меньше количества столбцов (5). Попробуйте снова.")
+            println("Количество элементов в строке меньше/больше количества столбцов (5). Попробуйте снова.")
         }
     }
 

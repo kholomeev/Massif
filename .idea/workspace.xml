@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Отладка">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Lab2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2025_12_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2025_12_10__Changes_.xml" afterDir="false" />
+    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Меню (нужно сделать правку в задании 1 — трёхзначные числа)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lab2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Lab2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -246,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765012623993</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Меню (нужно сделать правку в задании 1 — трёхзначные числа)">
+      <option name="closed" value="true" />
+      <created>1765136220566</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1765136220566</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +276,8 @@
     <MESSAGE value="Отладка 1 и 2" />
     <MESSAGE value="Отладка 1 и 2 и 4" />
     <MESSAGE value="Отладка" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отладка" />
+    <MESSAGE value="Меню (нужно сделать правку в задании 1 — трёхзначные числа)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Меню (нужно сделать правку в задании 1 — трёхзначные числа)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
