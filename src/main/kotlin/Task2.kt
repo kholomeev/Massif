@@ -1,4 +1,4 @@
-fun main() {
+fun task2() {
     var matrix: Array<IntArray>
     while (true) {
         try {

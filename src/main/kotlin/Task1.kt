@@ -1,4 +1,4 @@
-fun main() {
+fun task1() {
     var row: Int
     var col: Int
     var matrix: Array<IntArray>

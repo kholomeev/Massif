@@ -1,4 +1,4 @@
-fun main() {
+fun task4() {
     var arr1: IntArray
     var arr2: IntArray
 

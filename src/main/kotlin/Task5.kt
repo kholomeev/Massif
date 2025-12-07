@@ -1,6 +1,4 @@
-import org.w3c.dom.UserDataHandler
-
-fun main() {
+fun task5() {
     var words: List<String>
     var wordsOnly: List<String>
 
