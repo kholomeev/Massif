@@ -1,5 +1,6 @@
 fun task2() {
     var matrix: Array<IntArray>
+
     while (true) {
         try {
             println("Введите элементы в матрицу: ")
