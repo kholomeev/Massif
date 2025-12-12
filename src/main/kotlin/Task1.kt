@@ -37,7 +37,7 @@ fun task1() {
                 val rowInputMatrix = readln().trim().split(" ").map { it.toInt() }
 
                 for (j in 0 until rowInputMatrix.size) {
-                    if (matrix[i][j] !in 100..999) {
+                    if (rowInputMatrix[j] !in 100..999) {
                         println("Обнаружено не трёхзначное число.")
                         return
                     }

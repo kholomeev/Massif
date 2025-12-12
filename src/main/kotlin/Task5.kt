@@ -9,6 +9,10 @@ fun task5() {
         words = readln().split(" ")
 
         wordsOnly = words.map { it.filter { ch -> ch.isLetter() }}
+        if (wordsOnly.isEmpty()) {
+            println("В введённой строке не обнаружено ни одной буквы.")
+        }
+
         wordsOnly.sorted()
 
         break
