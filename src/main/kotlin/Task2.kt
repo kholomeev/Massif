@@ -18,9 +18,11 @@ fun task2() {
         }
         catch (e: NumberFormatException) {
             println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
+            println(e.message)
         }
         catch (e: IndexOutOfBoundsException) {
             println("Количество элементов в строке меньше/больше количества столбцов (5). Попробуйте снова.")
+            println(e.message)
         }
     }
 

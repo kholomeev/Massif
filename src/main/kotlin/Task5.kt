@@ -6,7 +6,7 @@ fun task5() {
         println("Сортировка слов по похожим буквам. Символы, не являющиеся буквами, будут удалены.")
         print("Введите несколько слов: ")
 
-        words = readln().split(" ")
+        words = readln().trim().split(" ")
 
         wordsOnly = words.map { it.filter { ch -> ch.isLetter() }}
         if (wordsOnly.isEmpty()) {
@@ -14,7 +14,6 @@ fun task5() {
         }
 
         wordsOnly.sorted()
-
         break
     }
 
