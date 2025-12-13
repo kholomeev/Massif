@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="Выполнено...?">
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="3d82806c-e750-4ebf-b6bc-30ef79bc587b" name="Changes" comment="КОГДА ЭТО ВСЁ КОНЧИТСЯ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lab2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Lab2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Task5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,25 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Kotlin.Lab2Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Task1Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Task3Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Task4Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Task5Kt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Kotlin.Lab2Kt.executor": "Run",
+    "Kotlin.Task1Kt.executor": "Run",
+    "Kotlin.Task3Kt.executor": "Run",
+    "Kotlin.Task4Kt.executor": "Run",
+    "Kotlin.Task5Kt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Lab2Kt" type="JetRunConfigurationType" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab2Kt" />
@@ -237,13 +231,12 @@
       <option name="project" value="LOCAL" />
       <updated>1764420637028</updated>
     </task>
-    <task id="LOCAL-00020" summary="Отладка 1 и 2 и 4">
-      <option name="closed" value="true" />
-      <created>1764796629490</created>
+    <task id="LOCAL-00020" summary="КОГДА ЭТО ВСЁ КОНЧИТСЯ">
+      <created>1765628686986</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1764796629490</updated>
+      <updated>1765628686986</updated>
     </task>
     <task id="LOCAL-00021" summary="Отладка">
       <option name="closed" value="true" />
@@ -285,7 +278,7 @@
       <option name="project" value="LOCAL" />
       <updated>1765397139737</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +305,8 @@
     <MESSAGE value="Меню (нужно сделать правку в задании 1 — трёхзначные числа)" />
     <MESSAGE value="Количества (checkpoint)" />
     <MESSAGE value="Трёхзначные числа" />
-    <option name="LAST_COMMIT_MESSAGE" value="Трёхзначные числа" />
+    <MESSAGE value="КОГДА ЭТО ВСЁ КОНЧИТСЯ" />
+    <option name="LAST_COMMIT_MESSAGE" value="КОГДА ЭТО ВСЁ КОНЧИТСЯ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
