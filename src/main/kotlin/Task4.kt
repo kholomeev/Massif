@@ -7,11 +7,12 @@ fun task4() {
     while (true) {
         try {
             print("Введите 1 числовой массив: ")
-            arr1 = readln().split(" ").map { it.toInt() }.toIntArray()
+            arr1 = readln().trim().split(" ").map { it.toInt() }.toIntArray()
             arr1.sort()
             break
         }
         catch (e: NumberFormatException) {
+            println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
             println(e.message)
         }
     }
@@ -19,11 +20,12 @@ fun task4() {
     while (true) {
         try {
             print("Введите 2 числовой массив: ")
-            arr2 = readln().split(" ").map { it.toInt() }.toIntArray()
+            arr2 = readln().trim().split(" ").map { it.toInt() }.toIntArray()
             arr2.sort()
             break
         }
         catch (e: NumberFormatException) {
+            println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
             println(e.message)
         }
     }

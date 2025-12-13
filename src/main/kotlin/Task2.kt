@@ -18,9 +18,11 @@ fun task2() {
         }
         catch (e: NumberFormatException) {
             println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
+            println(e.message)
         }
         catch (e: IndexOutOfBoundsException) {
             println("Количество элементов в строке меньше/больше количества столбцов (5). Попробуйте снова.")
+            println(e.message)
         }
     }
 
@@ -36,7 +38,7 @@ fun task2() {
 }
 
 fun isMatrixSymmetric(matrix: Array<IntArray>): String {
-    var symmetricCounter: Int = 0
+    var symmetricCounter = 0
     for (i in 0 until 5) {
         for (j in 0 until 5) {
             if (matrix[i][j] == matrix[j][i]) {
@@ -50,6 +52,6 @@ fun isMatrixSymmetric(matrix: Array<IntArray>): String {
         "Массив симметричен относительно главной диагонали"
     }
     else {
-        "Массив не симметричен относительно главной диагонали";
+        "Массив не симметричен относительно главной диагонали"
     }
 }

@@ -6,20 +6,20 @@ fun task5() {
         println("Сортировка слов по похожим буквам. Символы, не являющиеся буквами, будут удалены.")
         print("Введите несколько слов: ")
 
-        words = readln().split(" ")
+        words = readln().trim().split(" ")
 
         wordsOnly = words.map { it.filter { ch -> ch.isLetter() }}
         if (wordsOnly.isEmpty()) {
             println("В введённой строке не обнаружено ни одной буквы.")
+            continue
         }
 
         wordsOnly.sorted()
-
         break
     }
 
     val groups = groupByUniqueLetters(wordsOnly)
-    groups.forEach { (key, value) ->
+    groups.forEach { (_, value) ->
         println("$value")
     }
 }

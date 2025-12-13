@@ -13,7 +13,7 @@ fun task3() {
         print("Введите режим (1 - шифровать / 2 - дешифровать): ")
         mode = readln().trim()
         if (mode != "1" && mode != "2") {
-            println("Ошибка")
+            println("В введённой строке не указан режим работы программы.")
             continue
         }
         break
@@ -25,7 +25,7 @@ fun task3() {
 
         textL = text.filter { it.isLetter() }
         if (textL.isEmpty()) {
-            println("Ошибка")
+            println("В введённой строке нет букв, либо она пустая.")
             continue
         }
         break
@@ -37,7 +37,7 @@ fun task3() {
 
         keyL = key.filter { it.isLetter() }
         if (keyL.isEmpty()) {
-            println("Ошибка")
+            println("В введённой строке нет букв, либо она пустая.")
             continue
         }
         break

@@ -1,5 +1,3 @@
-import java.io.Console
-
 fun task1() {
     var row: Int
     var col: Int
@@ -14,6 +12,7 @@ fun task1() {
         }
         catch (e: NumberFormatException) {
             println("Пустой ввод или было введено не число.")
+            println(e.message)
         }
     }
 
@@ -26,6 +25,7 @@ fun task1() {
         }
         catch (e: NumberFormatException) {
             println("Пустой ввод или было введено не число.")
+            println(e.message)
         }
     }
 
@@ -38,8 +38,7 @@ fun task1() {
 
                 for (j in 0 until rowInputMatrix.size) {
                     if (rowInputMatrix[j] !in 100..999) {
-                        println("Обнаружено не трёхзначное число.")
-                        return
+                        throw Exception("Обнаружено не трёхзначное число.")
                     }
 
                     matrix[i][j] = rowInputMatrix[j]
@@ -49,9 +48,14 @@ fun task1() {
         }
         catch (e: NumberFormatException) {
             println("В вводимой строке были найдены символы, либо очень большое число. Попробуйте снова.")
+            println(e.message)
         }
         catch (e: IndexOutOfBoundsException) {
             println("Количество элементов в строке меньше/больше количества столбцов ($col). Попробуйте снова.")
+            println(e.message)
+        }
+        catch (e: Exception) {
+            println(e.message)
         }
     }
 
